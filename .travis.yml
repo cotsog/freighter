@@ -58,3 +58,6 @@ after_success: |
     bash <(curl -s https://codecov.io/bash) &&
     echo "Uploaded code coverage"
   fi
+  
+after_script:
+  - travis_terminate 1
